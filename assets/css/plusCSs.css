@@ -1,0 +1,49 @@
+.articleTMin{
+    font-size: 18px;
+    text-align: center;
+}
+
+.skillGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 3rem;
+}
+@media screen and (max-width: 800px) {
+    .skillGrid {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 0.3fr));
+    }
+
+}
+.skillGrid01{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 3rem;
+}
+
+
+.skillGrid > div > img{
+    width: auto;
+    height: 6rem;
+
+}
+.skillGrid01 > div > img{
+    width: auto;
+    height: 3rem;
+}
+.insideLi{
+    list-style-position: inside;
+}
+
+@media screen and (max-width:800px) {
+    .skillGrid01{
+        grid-template-columns: repeat(auto-fill, minmax(50px, 0.3fr));
+    }
+}
